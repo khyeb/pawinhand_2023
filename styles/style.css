@@ -67,7 +67,7 @@ main {}
 웹 페이지 1장에서 swiper가 2개이상 들어올 경우 디자인이 강제로 중복될 수 있으므로 개별 아이디 및 클래스명을
 사용해서 강제로 선택자를 만들고 디자인한다. */
 main #pawin_slide {
-    width:1160px; height:650px;
+    max-width:1160px; height:650px;
     background:yellowgreen;
 }
 main #pawin_slide .swiper-wrapper {}
@@ -124,3 +124,14 @@ main #pawin_slide2 .swiper-button-next {
 }
 main #pawin_slide2 .swiper-button-prev::after,
 main #pawin_slide2 .swiper-button-next::after {display:none;}
+main #pawin_slide3 {
+    max-width:1160px; margin:0 auto;
+}
+main #pawin_slide3 .swiper-wrapper .swiper-slide img {width:100%;}
+main .pawin_info {}
+main .pawin_info  #pawin_info_wrapper {
+    background:aqua;
+    width:1160px;
+}
+main .pawin_info #pawin_info_wrapper .swiper-wrapper .swiper-slide {}
+main .pawin_info #pawin_info_wrapper .swiper-wrapper .swiper-slide img{}

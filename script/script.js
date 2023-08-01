@@ -55,3 +55,11 @@ const pawinSlide =new Swiper('#pawin_slide2',{
         prevEl: '#pawin_slide2 .swiper-button-prev',
     },
 })
+const pawinSlide2 =new Swiper('#pawin_slide3',{
+    autoplay:{delay:4000},
+    loop:true,
+})
+const pawin_info_wrapper=new Swiper('#pawin_info_wrapper',{
+    slidePerView:4,
+    spaceBetween:20,
+})
