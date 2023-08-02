@@ -59,7 +59,14 @@ const pawinSlide2 =new Swiper('#pawin_slide3',{
     autoplay:{delay:4000},
     loop:true,
 })
-const pawin_info_wrapper=new Swiper('#pawin_info_wrapper',{
-    slidePerView:4,
+const pawin_info_wrapper=new Swiper('#dog_info_slide',{
+    slidesPerView:'auto',
     spaceBetween:20,
+    loop:true,
+    breakpoints: {
+        400:{slidesPerView:2},//400~899
+        // 700:{slidesPerView:2}/700이상일때
+        900:{slidesPerView:3},//900이상일때
+        1160:{slidesPerView:4},
+    },
 })
